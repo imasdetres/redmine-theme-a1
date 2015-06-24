@@ -327,6 +327,9 @@ table.list tr.issue a { color: #666; }
 tr.even {background-color: transparent;}
 table.list th {background-color: transparent;}*/
 
+table.list tr.issue.private .subject:after { content:" (priv)"; font-size:.7em; color:blue; font-style: italic; font-weight: normal; }
+table.list tr.issue:not(.private) .subject:after { content:" (pub)"; font-size:.7em; color:red; font-style: italic; font-weight: bold; }
+
 /*Immediately*/
 tr.odd.priority-15, table.list tbody tr.odd.priority-15:hover { color: #900; font-weight: bold; }
 tr.priority-15 {
